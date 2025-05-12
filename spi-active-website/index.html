@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Flying Hand">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sampling-Based System Identification with Active Exploration for Legged Robot Sim2Real Learning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <meta property="og:site_name" content="Flying Hand" />
+  <meta property="og:title" content="Flying Hand" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Flying Hand" />
+</head>
+
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Sampling-Based System Identification with Active Exploration for Legged Robot Sim2Real Learning </h1>
+            <div class="is-size-4 publication-authors">
+            </div>
+            <div class="is-size-3 publication-authors">
+              <!-- make a Italic font -->
+              <i style="color:rgb(0, 0, 0);">Conference on Robot Learning (CoRL) 2025</i> &nbsp;&nbsp;
+            </div>
+            <!-- <div class="is-size-4 publication-authors">
+              <b style="color:rgb(255, 100, 100);">Best Systems Paper Award Finalist (top 3)</b>
+            </div> -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./static/pdf/_CORL_2025_SPI_ACTIVE.pdf"
+                     class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- arXiv Link. -->
+               <!-- <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>ArXiv</span>
+                  </a>
+                </span> -->
+                <!-- add twitter link -->
+                <!-- <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Summary</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+               <!-- <span class="link-block">
+                  <a href="https://youtu.be/g5egNbtQCwA"
+                     class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="section"> -->
+    <!-- add video -->
+     <!-- <div class="container is-max-desktop">
+        <video controls autoplay loop muted playsinline 
+          src="./static/videos/teaser.mp4" poster="./resources/loading-icon.gif" 
+          style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"
+          type="video/mp4">
+        </video>
+    </div>
+  </section> -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-12">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p> Sim-to-real discrepancies hinder learning-based policies from achieving high-precision tasks in the real world. 
+              While Domain Randomization (DR) is commonly used to bridge this gap, 
+              it often relies on heuristics and can lead to overly conservative policies with degrading performance when not properly tuned. 
+              System Identification (Sys-ID) offers a targeted approach, but standard techniques rely on differentiable dynamics and/or direct torque measurement, 
+              assumptions that rarely hold for contact-rich legged systems. To this end, we present Sampling-based Parameter Identification with Active Exploration (SPI-Active),
+              a two-stage framework that estimates physical parameters of legged robots to minimize the sim-to-real gap. 
+              SPI-Active robustly identifies key physical parameters through massive parallel sampling, 
+              minimizing state prediction errors between simulated and real-world trajectories. 
+              To further improve the informativeness of collected data, 
+              we introduce an active exploration strategy that maximizes the Fisher Information of the collected real-world trajectories via optimizing the input commands of an exploration policy. 
+              This targeted exploration leads to accurate identification and better generalization across diverse tasks. 
+              Experimental results demonstrate that SPI-Active enables precise sim-to-real transfer of learned policies to the real world, 
+              outperforming baselines by 42-63% in various locomotion tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  
+  
+  </section>
+  
+  <section class="section">
+    <div class="columns is-centered">
+      <div class="column is-12">
+        <div class="columns is-centered">
+          <div class="column is-12">
+            <h2 class="title is-2 has-text-centered">Method</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- insert one image -->
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/pipeline.png" alt="pipeline" style="width:100%;">
+        <h2 class="subtitle has-text-centered">
+          pipeline
+        </h2>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- <h2 class="title is-2" style="text-align: center;">Experiment Results</h2> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-12">
+        <div class="columns is-centered">
+          <div class="column is-12">
+            <h2 class="title is-2 has-text-centered">Experiment Results</h2>
+          </div>
+        </div>
+          <!-- add text at the top left of these three videos -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;" id="press-coverage">Media</h2>
+    <br>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <a target="_blank" href="https://spectrum.ieee.org/video-friday-unitree-talks-robots">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/IEEE-Spectrum.svg" width="70%"></img>
+        </a>
+      </div>
+  </div>
+</section> -->
+
+
+
+</body>
+</html>
