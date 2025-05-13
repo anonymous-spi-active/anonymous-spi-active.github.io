@@ -222,23 +222,37 @@
                        width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112); margin-bottom: 10px;"></video>
             
                 <!-- <h3 class="title is-4" style="text-align: center;">Task B (Baseline)</h3> -->
-                <video class="sync-group-1" autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/vt-em-def-dr-2_sMvXleEt.mp4" 
-                       width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
+                <!-- Second video: 80% width, centered -->
+                <div style="display: flex; justify-content: center;">
+                  <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
+                         src="./static/videos/vt_vanilla_anim.mp4" 
+                         width="60%" 
+                         style="border-radius:10px; border: 5px solid rgb(255, 114, 112);">
+                  </video>
+                </div>
               </div>
             
               <!-- Column 2: Two vertically stacked videos -->
               <div class="column">
                 <h3 class="title is-4" style="text-align: center;">Velocity Tracking (SPI-Active)</h3>
+                
+                <!-- First video: full width -->
                 <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
                        src="./static/videos/vt_spi-active.mp4" 
-                       width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137); margin-bottom: 10px;"></video>
-            
-                <!-- <h3 class="title is-4" style="text-align: center;">Task B (FALCON)</h3> -->
-                <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/vt-active-sysid-2_kNN1mZwD.mp4" 
-                       width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
+                       width="100%" 
+                       style="border-radius:10px; border: 5px solid rgb(134, 236, 137); margin-bottom: 10px;">
+                </video>
+              
+                <!-- Second video: 80% width, centered -->
+                <div style="display: flex; justify-content: center;">
+                  <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
+                         src="./static/videos/vt_spi-active_anim.mp4" 
+                         width="60%" 
+                         style="border-radius:10px; border: 5px solid rgb(134, 236, 137);">
+                  </video>
+                </div>
               </div>
+              
             </div>
 
             <div class="columns is-desktop">
@@ -250,9 +264,13 @@
                        width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112); margin-bottom: 10px;"></video>
             
                 <!-- <h3 class="title is-4" style="text-align: center;">Task B (Baseline)</h3> -->
-                <video class="sync-group-1" autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/rp_vanilla (online-video-cutter.com).mp4" 
-                       width="100%" style="border-radius:10px; border: 5px solid rgb(255, 114, 112);"></video>
+                <div style="display: flex; justify-content: center;">
+                  <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
+                         src="./static/videos/rp_vanilla (online-video-cutter.com).mp4" 
+                         width="80%" 
+                         style="border-radius:10px; border: 5px solid rgb(255, 114, 112);">
+                  </video>
+                </div>
               </div>
             
               <!-- Column 2: Two vertically stacked videos -->
@@ -263,9 +281,13 @@
                        width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137); margin-bottom: 10px;"></video>
             
                 <!-- <h3 class="title is-4" style="text-align: center;">Task B (FALCON)</h3> -->
-                <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
-                       src="./static/videos/rp_spi-active (online-video-cutter.com) (1).mp4" 
-                       width="100%" style="border-radius:10px; border: 5px solid rgb(134, 236, 137);"></video>
+                <div style="display: flex; justify-content: center;">
+                  <video class="sync-group-2" autoplay muted loop playsinline controls preload="auto" 
+                         src="./static/videos/rp_spi-active (online-video-cutter.com) (1).mp4" 
+                         width="80%" 
+                         style="border-radius:10px; border: 5px solid rgb(134, 236, 137);">
+                  </video>
+                </div>
               </div>
             </div>
             
@@ -274,9 +296,104 @@
           </td>
         </tr>
       </div> 
+
+      
     </div>
   </div>
 </section>
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
+          Generalization to Humanoids 
+        </h2>
+            
+        <tr>
+          <td>
+            <div class="columns"> 
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Velocity Tracking (Vanilla)</h3>
+                <div style="display: flex; justify-content: center;">
+                  <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/vanilla.mp4" width="60%" style="border-radius:10px; border: 5px solid rgb(236, 136, 134);"></video>
+                </div>
+              </div>
+              <div class="column">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Velocity Tracking (SPI-Active)</h3>
+                <div style="display: flex; justify-content: center;">
+                  <video autoplay muted loop playsinline controls preload="auto" src="./static/videos/spi-active.mp4" width="60%" style="border-radius:10px; border: 5px solid rgb(56, 182, 60);"></video>
+                </div>
+              </div>
+            </div>
+            
+      
+          </td>
+        </tr>
+      </div> 
+      
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">
+          Data Collection with Active Exploration
+        </h2>
+        <!-- <p class="content is-medium" style="text-align: center; padding-bottom: 20px;">
+          Accurate parameter identification using <strong style="color: green; font-weight: 800;">SPI-Active</strong> enables the quadruped to perform high-speed open-loop navigation across narrow poles.        
+        </p>       -->
+        <tr>
+          <td>
+            <div class="columns is-vcentered">
+              <!-- Left: Centered video -->
+              <div class="column is-half" style="display: flex; justify-content: center; align-items: center;">
+                <video autoplay muted loop playsinline controls preload="auto"
+                       src="./static/videos/active exploration.mp4"
+                       style="border-radius:10px; border: 5px solid rgb(56, 182, 60); width: 100%; max-width: 640px; height: auto;">
+                </video>
+              </div>
+            
+              <!-- Right: Two plots, no white spacing -->
+              <div class="column is-half" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <img src="./static/images/velocity_variation.png"
+                     alt="Velocity Commands Plot"
+                     style="width: 100%; height: 350px; object-fit: contain; margin-bottom: 10px; border-radius: 10px;" />
+            
+                <img src="./static/images/gait_variation.png"
+                     alt="Gait Variation Plot"
+                     style="width: 100%; height: 220px; object-fit: contain; border-radius: 10px;" />
+              </div>
+            </div>
+            
+            
+            
+      
+          </td>
+        </tr>
+      </div> 
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- <section class="section">
