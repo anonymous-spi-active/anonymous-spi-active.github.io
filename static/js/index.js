@@ -75,4 +75,21 @@ $(document).ready(function() {
 
     bulmaSlider.attach();
 
+    function syncAndPlay(selector) {
+      const videos = document.querySelectorAll(selector);
+      const promises = Array.from(videos).map(video =>
+        video.play().catch(() => {})
+      );
+      Promise.all(promises).then(() => {
+        const minTime = Math.min(...Array.from(videos).map(v => v.currentTime));
+        videos.forEach(video => {
+          video.currentTime = minTime;
+          video.play();
+        });
+      });
+    }
+
+    syncAndPlay(".sync-group-1");
+    syncAndPlay(".sync-group-2");
+
 })
